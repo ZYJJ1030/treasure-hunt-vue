@@ -209,7 +209,7 @@ const playMainPageMusic = () => {
       mainPageAudio.currentTime = 0
     }
     
-    mainPageAudio = new Audio('/BGM/relaxing-guitar-loop-v5-245859.mp3')
+    mainPageAudio = new Audio(`${import.meta.env.BASE_URL}BGM/relaxing-guitar-loop-v5-245859.mp3`)
     mainPageAudio.loop = true
     mainPageAudio.volume = 0.3
     

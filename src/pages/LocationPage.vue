@@ -157,17 +157,17 @@ const gameStore = useGameStore()
 
 // 地点音乐映射
 const locationMusic = {
-  'library': '/BGM/library.mp3',
-  'cave': '/BGM/cave.mp3', 
-  'temple': '/BGM/temple.mp3',
-  'treasure': '/BGM/treasure.mp3',
-  'village': '/BGM/village.mp3',
-  'river': '/BGM/river.mp3',
-  'coast': '/BGM/beach.mp3',  // 修正：coast地点使用beach.mp3音乐
-  'beach': '/BGM/beach.mp3',  // 保留beach以防万一
-  'forest': '/BGM/forest.mp3',
-  'mountain': '/BGM/mountain.mp3',
-  'waterfall': '/BGM/waterfall.mp3'
+  'library': `${import.meta.env.BASE_URL}BGM/library.mp3`,
+  'cave': `${import.meta.env.BASE_URL}BGM/cave.mp3`, 
+  'temple': `${import.meta.env.BASE_URL}BGM/temple.mp3`,
+  'treasure': `${import.meta.env.BASE_URL}BGM/treasure.mp3`,
+  'village': `${import.meta.env.BASE_URL}BGM/village.mp3`,
+  'river': `${import.meta.env.BASE_URL}BGM/river.mp3`,
+  'coast': `${import.meta.env.BASE_URL}BGM/beach.mp3`,  // 修正：coast地点使用beach.mp3音乐
+  'beach': `${import.meta.env.BASE_URL}BGM/beach.mp3`,  // 保留beach以防万一
+  'forest': `${import.meta.env.BASE_URL}BGM/forest.mp3`,
+  'mountain': `${import.meta.env.BASE_URL}BGM/mountain.mp3`,
+  'waterfall': `${import.meta.env.BASE_URL}BGM/waterfall.mp3`
 }
 
 const locationId = computed(() => route.params.id)
